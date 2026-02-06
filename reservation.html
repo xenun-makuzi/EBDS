@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puppy Reservation | Mike English Bulldog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body class="detail-page">
+
+    <nav class="navbar">
+        <a href="index.html" class="logo-container">
+    <img src="logo.jpg" alt="BULLDOGKNL Logo" class="main-logo">
+                <div class="logo">MIKE<span>ENGLISHBULLDOG</span></div>
+</a>
+        <a href="index.html" class="back-link">← Back to Puppies</a>
+    </nav>
+
+    <section class="form-container">
+        <div class="reserve-header">
+            <h1>Puppy Reservation Agreement</h1>
+            <p>Securing your puppy requires a refundable deposit of <strong>$200</strong>.</p>
+        </div>
+
+        <div class="puppy-reservation-display">
+            <img id="res-puppy-img" src="images/placeholder.jpg" alt="Selected Puppy">
+            <div class="res-puppy-badge">Selected for Reservation</div>
+        </div>
+
+        <form id="reservation-form" class="styled-form" action="https://formspree.io/f/mpwyzllj" method="POST" enctype="multipart/form-data">
+            
+            <div class="form-section">
+                <h3>1. Reservation Details</h3>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Selected Puppy</label>
+                        <input type="text" id="res-puppy-name" name="Reserved Puppy" readonly>
+                    </div>
+                    <div class="input-group">
+                        <label>Full Price</label>
+                        <input type="text" id="res-total-price" name="Full Price" readonly>
+                    </div>
+                <div class="input-group">
+                    <label>Remaining Balance (After $500 Deposit)</label>
+                    <input type="text" id="res-balance" name="Balance Due" readonly style="font-weight:bold; color:#8d775f;">
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3>2. Buyer Information</h3>
+                <div class="form-row">
+                    <div class="input-group"><label>Full Name</label><input type="text" name="Buyer Name" id="buyer-name" required></div>
+                    <div class="input-group"><label>Phone</label><input type="tel" name="Phone" required></div>
+                </div>
+            </div>
+
+            <div class="reservation-summary-note">
+                <p>
+                    <strong>OFFICIAL RECORD:</strong> This document confirms that 
+                    <span id="note-user-name">__________</span> has successfully reserved 
+                    <span id="note-puppy-name">the selected puppy</span>. 
+                    By signing below, the buyer acknowledges the non-refundable nature of the deposit 
+                    and agrees to the terms of Mike English Bulldog.
+                </p>
+            </div>
+            
+            <div class="form-section">
+                <h3>3. Digital Signature</h3>
+                <canvas id="signature-pad" width="600" height="200"></canvas>
+                <div class="sig-btns">
+                    <button type="button" id="clear-sig" class="btn-link">Clear Signature</button>
+                    <button type="button" id="download-pdf" class="btn-outline">Download PDF Copy</button>
+                </div>
+                <input type="hidden" name="signature_data" id="signature-input">
+            </div>
+
+            <button type="submit" class="btn-primary full-width">Finalize & Submit Agreement</button>
+        </form>
+    </section>
+
+    <script src="reserve.js"></script>
+</body>
+</html>

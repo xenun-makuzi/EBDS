@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Puppies | Elite English Bulldogs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-container">
+    <img src="logo.jpg" alt="BULLDOGKNL Logo" class="main-logo">
+                <div class="logo">MIKE<span>ENGLISHBULLDOG</span></div>
+</a>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="puppies.html" class="active">OUR BULLDOGS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="gallery-hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1 class="playfair">Our English Bulldogs</h1>
+                <p>Premium health-tested English Bulldogs bred for structure and temperament.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="controls-container">
+        <div class="search-box">
+            <input type="text" id="puppy-search" placeholder="Search by name, color, or gender...">
+        </div>
+        <div class="filter-controls">
+            <button class="filter-btn active" data-status="all">All Puppies</button>
+            <button class="filter-btn" data-status="Available">Available</button>
+            <button class="filter-btn" data-status="Reserved">Reserved</button>
+        </div>
+    </section>
+
+    <section class="gallery-container">
+        <div id="puppy-grid" class="puppy-grid">
+            </div>
+    </section>
+
+    <script src="gallery.js"></script>
+</body>
+</html>

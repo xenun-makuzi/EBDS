@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoption Application | Elite Bulldogs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+    <nav class="navbar">
+       <a href="index.html" class="logo-container">
+    <img src="logo.jpg" alt="BULLDOGKNL Logo" class="main-logo">
+                <div class="logo">MIKE<span>ENGLISHBULLDOG</span></div>
+</a>
+        <a href="index.html" class="back-link">← Back to Home</a>
+    </nav>
+
+    <section class="form-container">
+        <div class="form-header">
+            <h1>Puppy Application</h1>
+            <p>Please complete this form in detail. We review all applications within 48 hours to ensure our puppies go to the best possible homes.</p>
+        </div>
+
+        <form id="adoption-form" class="styled-form">
+            <div class="form-section">
+                <h3>1. Personal Information</h3>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Full Name</label>
+                        <input type="text" name="name" required placeholder="John Doe">
+                    </div>
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input type="email" name="email" required placeholder="john@example.com">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label>Phone Number</label>
+                    <input type="tel" name="phone" required placeholder="(555) 000-0000">
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3>2. Home Environment</h3>
+                <div class="input-group">
+                    <label>Do you live in a house or apartment?</label>
+                    <select name="home_type">
+                        <option value="house">House</option>
+                        <option value="apartment">Apartment / Condo</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>Do you have a fenced yard?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="fence" value="yes"> Yes</label>
+                        <label><input type="radio" name="fence" value="no"> No</label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label>Are there other pets in the home?</label>
+                    <textarea name="other_pets" rows="2" placeholder="Tell us about your current pets..."></textarea>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3>3. Puppy Interest</h3>
+                <div class="input-group">
+                    <label>Are you interested in a specific puppy?</label>
+                    <input type="text" id="target-puppy" name="preferred_puppy" placeholder="e.g., Buster (or leave blank for general interest)">
+                </div>
+                <div class="input-group">
+                    <label>Why are you choosing an English Bulldog?</label>
+                    <textarea name="reason" rows="4" required></textarea>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-primary full-width">Submit Application</button>
+        </form>
+    </section>
+
+    <script src="apply.js"></script>
+</body>
+</html>

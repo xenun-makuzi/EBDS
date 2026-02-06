@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puppy Details | Elite Bulldogs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+
+    <nav class="navbar">
+         <a href="index.html" class="logo-container">
+    <img src="logo.jpg" alt="BULLDOGKNL Logo" class="main-logo">
+                <div class="logo">MIKE<span>ENGLISHBULLDOG</span></div>
+</a>
+        <a href="index.html" class="back-link">← Back to Puppies</a>
+    </nav>
+
+    <main class="detail-container">
+        <div class="media-gallery">
+            <div id="main-display">
+                </div>
+            <div id="thumbnails" class="thumbnails">
+                </div>
+        </div>
+
+        <div class="info-sidebar">
+            <h1 id="dog-name">Loading...</h1>
+            <p id="dog-parentage" class="parentage-text"></p>
+            
+            <div class="price-tag" id="dog-price"></div>
+            
+            <div class="specs-grid">
+                <div class="spec-item"><strong>Gender:</strong> <span id="dog-gender"></span></div>
+                <div class="spec-item"><strong>Status:</strong> <span id="dog-status"></span></div>
+            </div>
+
+            <div class="description-box">
+                <h3>About this Puppy</h3>
+                <p id="dog-description"></p>
+            </div>
+
+            <div class="action-buttons">
+    <a href="apply.html" id="inquire-btn" class="btn-secondary">Inquire First</a>
+    <a href="reserve.html" id="reserve-btn" class="btn-primary">Reserve Now ($1,000)</a>
+</div>
+        </div>
+    </main>
+    <section class="similar-dogs">
+    <div class="section-header">
+        <h2>Similar Puppies</h2>
+        <p>You might also fall in love with these little ones.</p>
+    </div>
+    <div id="similar-grid" class="puppy-grid">
+        </div>
+</section>
+    <script src="details.js"></script>
+</body>
+</html>
