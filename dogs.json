@@ -37,14 +37,14 @@
   },
   {
     "id": "eb-004",
-    "name": "Daisy",
-    "featured": false,
-    "gender": "Female",
-    "status": "Sold",
-    "price": "$3,200",
-    "description": "A beautiful brindle female with a very gentle soul.",
+    "name": "Jackson",
+    "featured": true,
+    "gender": "Male",
+    "status": "Available",
+    "price": "$800",
+    "description": "A beautiful Male with a very gentle soul.",
     "parentage": "Sire: Rocky x Dam: Daisy",
-    "images": ["daisy-1.jpg", "daisy-2.jpg"],
+    "images": ["jack1.jpg", "jack2.jpg"],
     "video": "daisy-video.mp4"
   },
   {
