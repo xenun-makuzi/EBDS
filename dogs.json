@@ -41,11 +41,11 @@
     "featured": true,
     "gender": "Male",
     "status": "Available",
-    "price": "$800",
+    "price": "$1500",
     "description": "A beautiful Male with a very gentle soul.",
     "parentage": "Sire: Rocky x Dam: Daisy",
     "images": ["jack1.jpg", "jack2.jpg"],
-    "video": "daisy-video.mp4"
+    "video": "daisyy.mp4"
   },
   {
     "id": "eb-005",
